@@ -1,0 +1,14 @@
+C:\Users\Alessandro\source\repos\sn4k3rServer\bin\Debug\net7.0\sn4k3rServer.exe
+C:\Users\Alessandro\source\repos\sn4k3rServer\bin\Debug\net7.0\sn4k3rServer.deps.json
+C:\Users\Alessandro\source\repos\sn4k3rServer\bin\Debug\net7.0\sn4k3rServer.runtimeconfig.json
+C:\Users\Alessandro\source\repos\sn4k3rServer\bin\Debug\net7.0\sn4k3rServer.dll
+C:\Users\Alessandro\source\repos\sn4k3rServer\bin\Debug\net7.0\sn4k3rServer.pdb
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.AssemblyInfoInputs.cache
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.AssemblyInfo.cs
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.csproj.CoreCompileInputs.cache
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.dll
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\refint\sn4k3rServer.dll
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.pdb
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\sn4k3rServer.genruntimeconfig.cache
+C:\Users\Alessandro\source\repos\sn4k3rServer\obj\Debug\net7.0\ref\sn4k3rServer.dll

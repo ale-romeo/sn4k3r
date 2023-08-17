@@ -1,0 +1,494 @@
+﻿<Window x:Class="sn4k3r.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sn4k3r" xmlns:viewmodel="clr-namespace:sn4k3r.MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="sn4k3r" Height="650" Width="1200"
+        WindowStyle="None"
+        ResizeMode="CanResizeWithGrip"
+        Background="#181735"
+        AllowsTransparency="True">
+    <Window.DataContext>
+        <viewmodel:MainViewModel />
+    </Window.DataContext>
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#13135c"
+             Grid.ColumnSpan="2"
+              MouseDown="Grid_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="title"
+                       Text="sn4k3r"
+                       Foreground="White"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       FontFamily="Consolas"
+                       FontSize="14"
+                       FontWeight="Light">
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <StringAnimationUsingKeyFrames x:Name="titleAnimation"
+                                    Storyboard.TargetName="title"
+                                    Storyboard.TargetProperty="(TextBlock.Text)"
+                                    Duration="0:0:3">
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0" Value="a23sac"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.0625" Value="34b6ln"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.125" Value="n2b734"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.1875" Value="jb5325"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.25" Value="fn94mk"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.3125" Value="3lkf9d"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.375" Value="09fgsm"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.4375" Value="i69dsm"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.5" Value="sz9bjw"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.5625" Value="s9ftn4"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.625" Value="sqg1ny"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.6875" Value="spd5w7"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.75" Value="sgiua8"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.8125" Value="sou51r"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.875" Value="s5prx3"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:0.9375" Value="sqfdt7"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1" Value="snx3io"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.0625" Value="sn3ze5"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.125" Value="snw5x8"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.1875" Value="snp0pp"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.25" Value="snptph"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.3125" Value="sngbau"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.375" Value="snlz1f"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.4375" Value="sn1zfv"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.5" Value="sn45xv"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.5625" Value="sn4s2i"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.625" Value="sn45ft"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.6875" Value="sn4cka"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.75" Value="sn4hpo"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.8125" Value="sn47b7"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.875" Value="sn41wk"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:1.9375" Value="sn4q5l"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2" Value="sn4kuo"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.0625" Value="sn4k6n"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.125" Value="sn4kx2"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.1875" Value="sn4kfq"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.25" Value="sn4kmv"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.3125" Value="sn4kwk"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.375" Value="sn4kia"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.4375" Value="sn4ke0"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:5" Value="sn4k3n"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.5625" Value="sn4k32"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.625" Value="sn4k32"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.6875" Value="sn4k35"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.75" Value="sn4k3d"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.8125" Value="sn4k39"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.875" Value="sn4k3p"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:2.9375" Value="sn4k30"/>
+                                    <DiscreteStringKeyFrame KeyTime="0:0:3" Value="sn4k3r"/>
+
+                                </StringAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal"
+                        Grid.Column="13"
+                        Grid.ColumnSpan="2">
+
+                <Button Content="_"
+                        Foreground="LightGray"
+                        FontWeight="Bold"
+                        Margin="0,-1,0,0"
+                        Click="ButtonMinimize_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Consolas"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="20" Height="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Content="□"
+                        Foreground="LightGray"
+                        FontWeight="Bold"
+                        FontSize="16"
+                        Background="Transparent"
+                        Click="WindowStateButton_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Consolas"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="20" Height="20"
+                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Content="🞩"
+                        Foreground="LightGray"
+                        FontWeight="Bold"
+                        Background="Transparent"
+                        Margin="0,4,0,0"
+                        Click="CloseButton_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Consolas"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="20" Height="20"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1"
+                    VerticalAlignment="Center"
+                    Margin="60" Cursor="">
+
+            <StackPanel>
+                
+                <StackPanel Orientation="Horizontal"
+                            Margin="0,0,0,20">
+                    <Image Width="60" Height="60"
+                           Source="../../Images/logo1.png"
+                           RenderOptions.BitmapScalingMode="Fant"/>
+                    <TextBlock x:Name="opening_line"
+                               Text="sn4k3r"
+                               Foreground="White"
+                               FontSize="20"
+                               FontWeight="Medium"
+                               VerticalAlignment="Center"
+                               FontFamily="Consolas">
+                        <TextBlock.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <StringAnimationUsingKeyFrames
+                                            Storyboard.TargetName="opening_line"
+                                            Storyboard.TargetProperty="(TextBlock.Text)"
+                                            Duration="0:0:3">
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0" Value="a23sac"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.0625" Value="34b6ln"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.125" Value="n2b734"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.1875" Value="jb5325"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.25" Value="fn94mk"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.3125" Value="3lkf9d"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.375" Value="09fgsm"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.4375" Value="i69dsm"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.5" Value="sz9bjw"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.5625" Value="s9ftn4"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.625" Value="sqg1ny"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.6875" Value="spd5w7"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.75" Value="sgiua8"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.8125" Value="sou51r"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.875" Value="s5prx3"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:0.9375" Value="sqfdt7"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1" Value="snx3io"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.0625" Value="sn3ze5"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.125" Value="snw5x8"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.1875" Value="snp0pp"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.25" Value="snptph"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.3125" Value="sngbau"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.375" Value="snlz1f"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.4375" Value="sn1zfv"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.5" Value="sn45xv"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.5625" Value="sn4s2i"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.625" Value="sn45ft"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.6875" Value="sn4cka"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.75" Value="sn4hpo"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.8125" Value="sn47b7"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.875" Value="sn41wk"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:1.9375" Value="sn4q5l"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2" Value="sn4kuo"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.0625" Value="sn4k6n"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.125" Value="sn4kx2"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.1875" Value="sn4kfq"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.25" Value="sn4kmv"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.3125" Value="sn4kwk"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.375" Value="sn4kia"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.4375" Value="sn4ke0"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:5" Value="sn4k3n"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.5625" Value="sn4k32"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.625" Value="sn4k32"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.6875" Value="sn4k35"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.75" Value="sn4k3d"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.8125" Value="sn4k39"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.875" Value="sn4k3p"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:2.9375" Value="sn4k30"/>
+                                            <DiscreteStringKeyFrame KeyTime="0:0:3" Value="sn4k3r"/>
+
+                                        </StringAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </TextBlock.Triggers>
+                    </TextBlock>
+                </StackPanel>
+
+                <TextBlock Text="B1t3"
+                           Foreground="White"
+                           FontSize="25"
+                           FontWeight="Medium"
+                           FontFamily="Consolas"/>
+
+                <TextBlock Text="Y0ur"
+                           Foreground="White"
+                           FontSize="25"
+                           FontWeight="Medium"
+                           FontFamily="Consolas"/>
+
+                <TextBlock x:Name="third_line"
+                           Text="Sn34k3r"
+                           Foreground="White"
+                           FontSize="25"
+                           FontWeight="Medium"
+                           FontFamily="Consolas">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <StringAnimationUsingKeyFrames
+                                        Storyboard.TargetName="third_line"
+                                        Storyboard.TargetProperty="(TextBlock.Text)"
+                                        Duration="0:0:2"
+                                        RepeatBehavior="3x">
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.0625" Value="Sn13k6r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.125" Value="Sn77k5r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.1875" Value="Sn89k8r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.25" Value="Sn87k6r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.3125" Value="Sn23k9r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.375" Value="Sn11k5r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.4375" Value="Sn98k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.5" Value="Sn87k8r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.5625" Value="Sn54k8r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.625" Value="Sn16k5r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.6875" Value="Sn03k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.75" Value="Sn46k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.8125" Value="Sn47k6r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.875" Value="Sn64k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:0.9375" Value="Sn13k5r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.0" Value="Sn76k6r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.0625" Value="Sn33k7r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.125" Value="Sn65k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.1875" Value="Sn94k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.25" Value="Sn23k9r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.3125" Value="Sn51k4r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.375" Value="Sn02k3r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.4375" Value="Sn59k3r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.5" Value="Sn12k9r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.5625" Value="Sn09k6r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.625" Value="Sn57k9r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.6875" Value="Sn78k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.75" Value="Sn70k0r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.8125" Value="Sn52k4r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.875" Value="Sn97k5r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:1.9375" Value="Sn08k1r"/>
+                                        <DiscreteStringKeyFrame KeyTime="0:0:2.0" Value="Sn34k3r"/>
+
+                                    </StringAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel x:Name="Buttons"
+                        Orientation="Horizontal"
+                        Margin="0,15,0,0">
+                <Button Content="Buy"
+                        Foreground="White"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Margin="0,0,10,0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Consolas"/>
+                            <Setter Property="Background" Value="#FF19036E"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FF19036E"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="25"
+                                    CornerRadius="12"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button Content="Login"
+                        Foreground="White"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Click="Login_Click"
+                        Command="{Binding ConnectToServerCommand}">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Consolas"/>
+                            <Setter Property="Background" Value="#39385D"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#3A3952"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="25"
+                                    CornerRadius="12"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+            <Rectangle Height="40" Width="250"
+                       HorizontalAlignment="Left"
+                       Fill="#FF181735"/>
+
+        </StackPanel>
+
+        <Grid Grid.Column="1"
+              Grid.RowSpan="2"
+              Margin="160, -365, -610, 85"
+              Panel.ZIndex="-1">
+
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="-350, 250, -255, -250">
+
+                <StackPanel>
+                    <Border Width="700"
+                            Height="25"
+                            Background="LightGray"
+                            Margin="150,0,0,0"
+                            CornerRadius="15"/>
+                    <Border Width="700"
+                            Height="25"
+                            Background="#FF11024A"
+                            Margin="0,15,0,0"
+                            CornerRadius="15"/>
+                    <Border Width="700"
+                            Height="25"
+                            Background="LightGray"
+                            Margin="75,15,0,0"
+                            CornerRadius="15"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <Border Width="700"
+                            Height="25"
+                            Background="LightGray"
+                            Margin="150,0,0,0"
+                            CornerRadius="15"/>
+                    <Border Width="700"
+                            Height="25"
+                            Background="#FF11024A"
+                            Margin="0,15,0,0"
+                            CornerRadius="15"/>
+                    <Border Width="700"
+                            Height="25"
+                            Background="LightGray"
+                            Margin="75,15,0,0"
+                            CornerRadius="15"/>
+                </StackPanel>
+
+            </StackPanel>
+            
+        </Grid>        
+    </Grid>
+</Window>
