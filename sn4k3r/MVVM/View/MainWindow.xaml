@@ -301,13 +301,15 @@
                     </TextBlock>
                 </StackPanel>
 
-                <TextBlock Text="B1t3"
+                <TextBlock x:Name="first_line"
+                           Text="B1t3"
                            Foreground="White"
                            FontSize="25"
                            FontWeight="Medium"
                            FontFamily="Consolas"/>
 
-                <TextBlock Text="Y0ur"
+                <TextBlock x:Name="second_line"
+                           Text="Y0ur"
                            Foreground="White"
                            FontSize="25"
                            FontWeight="Medium"
@@ -372,11 +374,13 @@
             <StackPanel x:Name="Buttons"
                         Orientation="Horizontal"
                         Margin="0,15,0,0">
-                <Button Content="Buy"
+                <Button x:Name="FirstButton"
+                        Content="6uy"
                         Foreground="White"
                         FontSize="14"
                         FontWeight="Medium"
-                        Margin="0,0,10,0">
+                        Margin="0,0,10,0"
+                        Click="FirstButton_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="TextElement.FontFamily" Value="Consolas"/>
@@ -402,7 +406,7 @@
                     </Button.Template>
                 </Button>
 
-                <Button Content="Login"
+                <Button Content="l0g1n"
                         Foreground="White"
                         FontSize="14"
                         FontWeight="Medium"
@@ -433,9 +437,6 @@
                     </Button.Template>
                 </Button>
             </StackPanel>
-            <Rectangle Height="40" Width="250"
-                       HorizontalAlignment="Left"
-                       Fill="#FF181735"/>
 
         </StackPanel>
 
