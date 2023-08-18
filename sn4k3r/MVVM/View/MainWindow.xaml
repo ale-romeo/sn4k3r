@@ -54,71 +54,9 @@
                        HorizontalAlignment="Left"
                        FontFamily="Consolas"
                        FontSize="14"
-                       FontWeight="Light">
-                <TextBlock.Triggers>
-                    <EventTrigger RoutedEvent="TextBlock.Loaded">
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <StringAnimationUsingKeyFrames x:Name="titleAnimation"
-                                    Storyboard.TargetName="title"
-                                    Storyboard.TargetProperty="(TextBlock.Text)"
-                                    Duration="0:0:3">
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0" Value="a23sac"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.0625" Value="34b6ln"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.125" Value="n2b734"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.1875" Value="jb5325"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.25" Value="fn94mk"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.3125" Value="3lkf9d"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.375" Value="09fgsm"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.4375" Value="i69dsm"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.5" Value="sz9bjw"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.5625" Value="s9ftn4"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.625" Value="sqg1ny"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.6875" Value="spd5w7"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.75" Value="sgiua8"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.8125" Value="sou51r"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.875" Value="s5prx3"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:0.9375" Value="sqfdt7"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1" Value="snx3io"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.0625" Value="sn3ze5"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.125" Value="snw5x8"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.1875" Value="snp0pp"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.25" Value="snptph"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.3125" Value="sngbau"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.375" Value="snlz1f"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.4375" Value="sn1zfv"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.5" Value="sn45xv"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.5625" Value="sn4s2i"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.625" Value="sn45ft"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.6875" Value="sn4cka"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.75" Value="sn4hpo"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.8125" Value="sn47b7"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.875" Value="sn41wk"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:1.9375" Value="sn4q5l"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2" Value="sn4kuo"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.0625" Value="sn4k6n"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.125" Value="sn4kx2"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.1875" Value="sn4kfq"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.25" Value="sn4kmv"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.3125" Value="sn4kwk"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.375" Value="sn4kia"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.4375" Value="sn4ke0"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:5" Value="sn4k3n"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.5625" Value="sn4k32"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.625" Value="sn4k32"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.6875" Value="sn4k35"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.75" Value="sn4k3d"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.8125" Value="sn4k39"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.875" Value="sn4k3p"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:2.9375" Value="sn4k30"/>
-                                    <DiscreteStringKeyFrame KeyTime="0:0:3" Value="sn4k3r"/>
+                       FontWeight="Light"
+                       Loaded="StartRoutine"/>
 
-                                </StringAnimationUsingKeyFrames>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                </TextBlock.Triggers>
-            </TextBlock>
 
             <StackPanel HorizontalAlignment="Center"
                         VerticalAlignment="Center"
