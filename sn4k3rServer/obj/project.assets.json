@@ -8,23 +8,23 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\alexr\\.nuget\\packages\\": {},
+    "C:\\Users\\Alessandro\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexr\\Source\\Repos\\ale-romeo\\sn4k3r\\sn4k3rServer\\sn4k3rServer.csproj",
+      "projectUniqueName": "C:\\Users\\Alessandro\\source\\repos\\sn4k3r\\sn4k3rServer\\sn4k3rServer.csproj",
       "projectName": "sn4k3rServer",
-      "projectPath": "C:\\Users\\alexr\\Source\\Repos\\ale-romeo\\sn4k3r\\sn4k3rServer\\sn4k3rServer.csproj",
-      "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexr\\Source\\Repos\\ale-romeo\\sn4k3r\\sn4k3rServer\\obj\\",
+      "projectPath": "C:\\Users\\Alessandro\\source\\repos\\sn4k3r\\sn4k3rServer\\sn4k3rServer.csproj",
+      "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alessandro\\source\\repos\\sn4k3r\\sn4k3rServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\alexr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
