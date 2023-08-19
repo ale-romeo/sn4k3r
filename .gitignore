@@ -1,0 +1,6 @@
+﻿################################################################################
+# Il file gitignore è stato creato automaticamente da Microsoft(R) Visual Studio.
+################################################################################
+
+/sn4k3r/obj/Debug/net7.0-windows/sn4k3r_MarkupCompile.i.lref
+/sn4k3r/.vs/sn4k3r/FileContentIndex
