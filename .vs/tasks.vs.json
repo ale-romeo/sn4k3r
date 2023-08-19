@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "attività-sn4k3rServer",
+      "appliesTo": "sn4k3rServer/",
+      "type": "launch"
+    }
+  ]
+}
