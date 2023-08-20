@@ -18,7 +18,6 @@ using System.Xml.Linq;
 using System.Diagnostics;
 using static System.Net.Mime.MediaTypeNames;
 using Application = System.Windows.Application;
-using System.Drawing;
 
 namespace sn4k3r
 {
@@ -28,6 +27,7 @@ namespace sn4k3r
     public partial class MainWindow : Window
     {
         private static string cases = "abcdefghijklmnopqrstuvwxyz0123456789";
+        bool logging = false;
 
         public MainWindow()
         {
@@ -836,6 +836,27 @@ namespace sn4k3r
             return animation;
         }
 
+        private DoubleAnimation userbox_animation(int a, int b)
+        {
+            DoubleAnimation animation = new DoubleAnimation();
+            Storyboard.SetTarget(animation, Username);
+            Storyboard.SetTargetProperty(animation, new PropertyPath(TextBox.OpacityProperty));
+            animation.Duration = TimeSpan.FromSeconds(3.5);
+            animation.From = a;
+            animation.To = b;
+            return animation;
+        }
+        private DoubleAnimation passbox_animation(int a, int b)
+        {
+            DoubleAnimation animation = new DoubleAnimation();
+            Storyboard.SetTarget(animation, Password);
+            Storyboard.SetTargetProperty(animation, new PropertyPath(TextBox.OpacityProperty));
+            animation.Duration = TimeSpan.FromSeconds(3.5);
+            animation.From = a;
+            animation.To = b;
+            return animation;
+        }
+
 
         private void MouseOverLogo_Routine(object sender, MouseEventArgs e)
         {
@@ -847,21 +868,35 @@ namespace sn4k3r
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            second_line.Foreground = Brushes.Gray;
-            third_line.Foreground = Brushes.Gray;
+            if (!logging)
+            {
+                second_line.Foreground = Brushes.Gray;
+                third_line.Foreground = Brushes.Gray;
+                Password.IsEnabled = true;
+                Username.IsEnabled = true;
 
-            // Create storyboard and add animation
-            Storyboard storyboard = new Storyboard();
-            storyboard.Children.Add(buy264ck_animation());
-            storyboard.Children.Add(B1t32L0g1n_animation());
-            storyboard.Children.Add(Y0ur2Us3rn4m3_animation());
-            storyboard.Children.Add(Sn34k3r2P4ssw0rd_animation());
-            storyboard.Children.Add(secondline_font(26, 20));
-            storyboard.Children.Add(thirdline_font(26, 20));
 
-            // Start the storyboard
-            storyboard.Begin(this);
+                // Create storyboard and add animation
+                Storyboard storyboard = new Storyboard();
+                storyboard.Children.Add(buy264ck_animation());
+                storyboard.Children.Add(B1t32L0g1n_animation());
+                storyboard.Children.Add(Y0ur2Us3rn4m3_animation());
+                storyboard.Children.Add(Sn34k3r2P4ssw0rd_animation());
+                storyboard.Children.Add(secondline_font(26, 20));
+                storyboard.Children.Add(thirdline_font(26, 20));
+                storyboard.Children.Add(userbox_animation(0, 100));
+                storyboard.Children.Add(passbox_animation(0, 100));
 
+                // Start the storyboard
+                storyboard.Begin(this);
+
+                logging = true;
+            }
+            else
+            {
+                
+            }
+            
         }
 
         private void FirstButton_Click(object sender, RoutedEventArgs e)
@@ -870,6 +905,8 @@ namespace sn4k3r
             {
                 second_line.Foreground = Brushes.White;
                 third_line.Foreground = Brushes.White;
+                Password.IsEnabled = false;
+                Username.IsEnabled = false;
 
                 Storyboard storyboard = new Storyboard();
                 storyboard.Children.Add(b4ck26uy_animation());
@@ -878,9 +915,15 @@ namespace sn4k3r
                 storyboard.Children.Add(P4ssw0rd2Sn34k3r_animation());
                 storyboard.Children.Add(secondline_font(20, 26));
                 storyboard.Children.Add(thirdline_font(20, 26));
+                storyboard.Children.Add(userbox_animation(100,0));
+                storyboard.Children.Add(passbox_animation(100,0));
 
                 // Start the storyboard
                 storyboard.Begin(this);
+
+                Password.Text = "";
+                Username.Text = "";
+                logging = false;
             }
         }
 
@@ -894,5 +937,14 @@ namespace sn4k3r
             storyboard.Begin(this);
         }
 
+        private void PassTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void UserTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

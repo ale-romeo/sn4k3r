@@ -176,32 +176,82 @@
                                MouseEnter="MouseOverLogo_Routine"/>
                 </StackPanel>
 
-                <TextBlock x:Name="first_line"
-                           Text="B1t3"
-                           Foreground="White"
-                           FontSize="25"
-                           FontWeight="Medium"
-                           FontFamily="Consolas"/>
+                <Grid Background="Transparent"
+                      Height="100">
 
-                <TextBlock x:Name="second_line"
-                           Text="Y0ur"
-                           Foreground="White"
-                           FontSize="25"
-                           FontWeight="Medium"
-                           FontFamily="Consolas"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
 
-                <TextBlock x:Name="third_line"
-                           Text="Sn34k3r"
-                           Foreground="White"
-                           FontSize="25"
-                           FontWeight="Medium"
-                           FontFamily="Consolas"
-                           Loaded="StartRoutine"/>
+                    <TextBlock x:Name="first_line"
+                               Text="B1t3"
+                               Grid.Column="2"
+                               Grid.Row="0"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Consolas"/>
+
+                    <TextBlock x:Name="second_line"
+                               Text="Y0ur"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               FontFamily="Consolas"
+                               Grid.Column="2"
+                               Grid.Row="1"/>
+                    <TextBox x:Name="Username"
+                             Background="Transparent"
+                             BorderThickness="0,0,0,1" 
+                             IsEnabled="False"
+                             FontFamily="Consolas"
+                             Foreground="#FFBCBBC5" 
+                             FontSize="16"
+                             Grid.Column="3"
+                             Grid.Row="1"
+                             Opacity="0"
+                             VerticalAlignment="Top"/>
+
+                     <TextBlock x:Name="third_line"
+                                Text="Sn34k3r"
+                                Foreground="White"
+                                FontSize="25"
+                                FontWeight="Medium"
+                                FontFamily="Consolas"
+                                Loaded="StartRoutine"
+                                Grid.Column="2"
+                                Grid.Row="3"/>
+                    <TextBox x:Name="Password"
+                             Background="Transparent"
+                             BorderThickness="0,0,0,1"
+                             IsEnabled="False"
+                             FontFamily="Consolas"
+                             Foreground="#FFBCBBC5"
+                             FontSize="16"
+                             Grid.Column="3"
+                             Grid.Row="2"
+                             Opacity="0"
+                             VerticalAlignment="Top"/>
+                </Grid>
+                
             </StackPanel>
 
             <StackPanel x:Name="Buttons"
                         Orientation="Horizontal"
-                        Margin="0,15,0,0">
+                        Margin="60,15,0,0">
                 <Button x:Name="FirstButton"
                         Content="6uy"
                         Foreground="White"
@@ -238,8 +288,7 @@
                         Foreground="White"
                         FontSize="14"
                         FontWeight="Medium"
-                        Click="Login_Click"
-                        Command="{Binding ConnectToServerCommand}">
+                        Click="Login_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="TextElement.FontFamily" Value="Consolas"/>
