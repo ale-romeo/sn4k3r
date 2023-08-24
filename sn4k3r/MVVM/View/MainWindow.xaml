@@ -213,7 +213,7 @@
                                FontFamily="Consolas"
                                Grid.Column="2"
                                Grid.Row="1"/>
-                    <TextBox x:Name="Username"
+                    <TextBox x:Name="UsernameBox"
                              Background="Transparent"
                              BorderThickness="0,0,0,1" 
                              IsEnabled="False"
@@ -223,9 +223,11 @@
                              Grid.Column="3"
                              Grid.Row="1"
                              Opacity="0"
-                             VerticalAlignment="Top"/>
+                             VerticalAlignment="Top"
+                             />
 
-                     <TextBlock x:Name="third_line"
+
+                    <TextBlock x:Name="third_line"
                                 Text="Sn34k3r"
                                 Foreground="White"
                                 FontSize="25"
@@ -234,7 +236,7 @@
                                 Loaded="StartRoutine"
                                 Grid.Column="2"
                                 Grid.Row="3"/>
-                    <TextBox x:Name="Password"
+                    <TextBox x:Name="PasswordBox"
                              Background="Transparent"
                              BorderThickness="0,0,0,1"
                              IsEnabled="False"
@@ -244,7 +246,9 @@
                              Grid.Column="3"
                              Grid.Row="2"
                              Opacity="0"
-                             VerticalAlignment="Top"/>
+                             VerticalAlignment="Top"
+                             />
+
                 </Grid>
                 
             </StackPanel>
@@ -284,7 +288,8 @@
                     </Button.Template>
                 </Button>
 
-                <Button Content="l0g1n"
+                <Button x:Name="login_button"
+                        Content="l0g1n"
                         Foreground="White"
                         FontSize="14"
                         FontWeight="Medium"

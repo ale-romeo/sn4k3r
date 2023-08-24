@@ -16,7 +16,7 @@ namespace sn4k3r.Net
             this.tcpClient = new TcpClient();
         }
 
-        public void ConnectToServer(string username)
+        public void ConnectToServer(string username, string password)
         {
             if (!this.tcpClient.Connected)
             {

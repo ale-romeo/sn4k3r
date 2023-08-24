@@ -18,6 +18,8 @@ using System.Xml.Linq;
 using System.Diagnostics;
 using static System.Net.Mime.MediaTypeNames;
 using Application = System.Windows.Application;
+using sn4k3r.Net;
+using sn4k3r.MVVM.ViewModel;
 
 namespace sn4k3r
 {
@@ -32,6 +34,7 @@ namespace sn4k3r
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -839,7 +842,7 @@ namespace sn4k3r
         private DoubleAnimation userbox_animation(int a, int b)
         {
             DoubleAnimation animation = new DoubleAnimation();
-            Storyboard.SetTarget(animation, Username);
+            Storyboard.SetTarget(animation, UsernameBox);
             Storyboard.SetTargetProperty(animation, new PropertyPath(TextBox.OpacityProperty));
             animation.Duration = TimeSpan.FromSeconds(3.5);
             animation.From = a;
@@ -849,7 +852,7 @@ namespace sn4k3r
         private DoubleAnimation passbox_animation(int a, int b)
         {
             DoubleAnimation animation = new DoubleAnimation();
-            Storyboard.SetTarget(animation, Password);
+            Storyboard.SetTarget(animation, PasswordBox);
             Storyboard.SetTargetProperty(animation, new PropertyPath(TextBox.OpacityProperty));
             animation.Duration = TimeSpan.FromSeconds(3.5);
             animation.From = a;
@@ -872,8 +875,8 @@ namespace sn4k3r
             {
                 second_line.Foreground = Brushes.Gray;
                 third_line.Foreground = Brushes.Gray;
-                Password.IsEnabled = true;
-                Username.IsEnabled = true;
+                PasswordBox.IsEnabled = true;
+                UsernameBox.IsEnabled = true;
 
 
                 // Create storyboard and add animation
@@ -889,12 +892,21 @@ namespace sn4k3r
 
                 // Start the storyboard
                 storyboard.Begin(this);
-
                 logging = true;
-            }
-            else
-            {
-                
+
+                MainViewModel vm = (MainViewModel)DataContext;
+                login_button.Command = vm.ConnectToServerCommand;
+                Binding usernameBinding = new Binding("Username");
+                usernameBinding.Source = vm;
+                usernameBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
+                usernameBinding.Mode = BindingMode.TwoWay;
+                UsernameBox.SetBinding(TextBox.TextProperty, usernameBinding);
+
+                Binding passwordBinding = new Binding("Password");
+                passwordBinding.Source = vm;
+                passwordBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
+                PasswordBox.SetBinding(TextBox.TextProperty, passwordBinding);
+
             }
             
         }
@@ -905,8 +917,8 @@ namespace sn4k3r
             {
                 second_line.Foreground = Brushes.White;
                 third_line.Foreground = Brushes.White;
-                Password.IsEnabled = false;
-                Username.IsEnabled = false;
+                PasswordBox.IsEnabled = false;
+                UsernameBox.IsEnabled = false;
 
                 Storyboard storyboard = new Storyboard();
                 storyboard.Children.Add(b4ck26uy_animation());
@@ -921,9 +933,11 @@ namespace sn4k3r
                 // Start the storyboard
                 storyboard.Begin(this);
 
-                Password.Text = "";
-                Username.Text = "";
+                PasswordBox.Text = "";
+                UsernameBox.Text = "";
                 logging = false;
+
+                login_button.Command = null;
             }
         }
 
@@ -935,16 +949,6 @@ namespace sn4k3r
             storyboard.Children.Add(thirdline_animation());
 
             storyboard.Begin(this);
-        }
-
-        private void PassTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void UserTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
